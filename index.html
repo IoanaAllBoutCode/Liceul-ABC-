@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Liceu ABC++</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="preloader">
+        <div id="status">&nbsp;
+        </div>
+    </div>
+    
+    <div class="w3-top" id="menu">
+        <div class="w3-bar w3-card" id="myNavbar">
+            <img src="img/logo/BEST-LOGO.jpeg" class="nav-item w3-wide" style="width: 6%; height: auto; margin-left: 10px;">
+
+            <div class="w3-right w3-hide-small" style="z-index: 3; margin-right: 20px;">
+                <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-house"></i><b>ACASĂ</b></a>
+                <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i><b>DESPRE NOI</b></a>
+                <a href="#teachers" class="w3-bar-item w3-button"><i class="fa fa-chalkboard-user"></i><b> PROFESORI</b></a>
+                <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-th"></i><b> GALERIE</b></a>
+                <!--<a href="cursuri2.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i><b>CURSURI</b></a>-->
+                <a class=" w3-bar-item w3-button" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #28242c; font-family: Poppins-SemiBold, sans-serif;"><i class="fa fa-book"></i>
+            CURSURI
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="cursuri2.html">Informatica</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> <b>CONTACTARE</b></a>
+                <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-right-to-bracket"></i><b>LOG IN</b></a>
+            </div>
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Închide &times;</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">ACASĂ</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">DESPRE NOI</a>
+        <a href="#teachers" onclick="w3_close()" class="w3-bar-item w3-button">PROFESORI</a>
+        <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALERIE</a><a class=" w3-bar-item w3-button" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #28242c; font-family: Poppins-SemiBold, sans-serif;"><i class="fa fa-book"></i>
+            CURSURI
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="cursuri2.html">Informatică</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTARE</a>
+        <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-right-to-bracket"></i><b>LOG IN</b></a>
+    </nav>
+    <div id="home"></div>
+
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+        <div id="carousel-div" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/background/books.jpg" alt="bg" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/background/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="bg" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/background/edited-again.jpg" alt="bg" class="d-block" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small over-image-text">Viitorul tău e mai sigur cu noi!</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium over-image-text">Viitorul tău e mai sigur cu noi!</span><br>
+            <span class="w3-large over-image-text">Cu noi înveți din plăcere</span>
+            <p><a href="#about" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Începe acum!</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+    <div onclick="menudown()" id="google_translate_element"></div>
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">DESPRE NOI</h3>
+        <p class="w3-center w3-large">Liceu al viitorului în care elevul ar putea nu doar SĂ EVOLUEZE, ci şi să poată face SALTURI ÎN CUNOAŞTERE.</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-third">
+                <i class="fa-solid fa-rocket w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Misiune</p>
+                <p>
+                    Prin acțiunile noastre, putem contribui la construirea unui viitor promițător pentru noi și copiii noștri, efortul nostru comun vizând crearea de șanse și oportunități reale de autodezvoltare în ceea ce privește integrarea pe piața muncii.</p>
+            </div>
+            <div class="w3-third">
+                <i class="fa-solid fa-eye w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Viziune</p>
+                <p>Liceul online „ABC++” dezvoltă activități educaționale și culturale, promovate atât formal, cât și informal, pentru creșterea performanței și a competitivității, pentru îmbunătățirea competențelor și integrării profesionale pentru toți copiii, tinerii sau adulții, fără discriminare.</p>
+            </div>
+            <div class="w3-third">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Valori</p>
+                <p>- Eficienţă</p>
+                <p>- Inovare</p>
+                <p>- Receptivitate la nou</p>
+                <p>- Creativitate</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container" style="padding:128px 16px" id="teachers">
+        <h3 class="w3-center">PROFESORII</h3>
+        <p class="w3-center w3-large">Baza proiectului nostru</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="img/teachers/roza.jpg" alt="Roza" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Roza Hernández</h3>
+                        <p class="w3-opacity">Cofondator & Profesoară</p>
+                        <p>Roza este cea care a venit cu ideea de a înființă acest liceu digital și persoana în care avem cea mai mare încredere. Persoană inimoasă și ordonată. Profesoară în C, C++, C#, Python</p>
+                        <div class="dropdown">
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                            <div class="dropdown-content">
+                                <p>Telefon: +40 123 456 789</p>
+                                <p>Email: roza_herández@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="img/teachers/joseph.jpg" alt="Joseph" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Joseph Garcia</h3>
+                        <p class="w3-opacity">Cofondator & Profesor</p>
+                        <p>Cofondatorul proiectului și întreținătorul moral al echipei, nu am fi putut ajunge aici fără Joseph. Zâmbitor și glumeț, aduce tuturor zabetul pe buze. Profesor de Ruby, Java, Python. </p>
+                        <div class="dropdown">
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                            <div class="dropdown-content">
+                                <p>Telefon: +40 123 456 789</p>
+                                <p>Email: josephthegreat@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="img/teachers/elijah.jpg" alt="Elijah" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Elijah Miller</h3>
+                        <p class="w3-opacity">Web Designer & Profesor</p>
+                        <p>Elijah este designer-ul nostru de încredere. El este creatorul site-ul și, de asemenea, un profesor de excepție. Motivat și profesional. Profesor de HTML, CSS, JavaScript, PHP.</p>
+                        <div class="dropdown">
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                            <div class="dropdown-content">
+                                <p>Telefon: +40 123 456 789</p>
+                                <p>Email: elijahmiller28@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="img/teachers/gabriella.jpg" alt="Gabriella" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Gabriella Martinez</h3>
+                        <p class="w3-opacity">Persoană de contact & Profesoară</p>
+                        <p>Sufletul echipei, Gabriella este iubită atât de copii, cât și de părinți, ea fiind persoana de contact perfectă. Predă cu ajutorul site-urilor de programare pentru copii Scratch, Tynker, CodinGame și altele.</p>
+                        <div class="dropdown">
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                            <div class="dropdown-content">
+                                <p>Telefon: +40 123 456 789</p>
+                                <p>Email: gabriella123@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container" style="padding:128px 16px" id="gallery">
+        <h3 class="w3-center">GALERIA</h3>
+        <p class="w3-center w3-large">Poze trimise de studenții nostrii pentru a ne susține site-ul</p>
+
+        <div class="container" style="display: none">
+            <button type="button" style="z-index: 0" class="btn-close" onclick="this.parentElement.style.display='none'"></button>
+            <img alt="big-img" id="big-img" style="width:70%">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.06.jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(1).jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(2).jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(3).jpeg" onclick="gallery(this);">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(4).jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(5).jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07%20(6).jpeg" onclick="gallery(this);">
+                </div>
+                <div class="col">
+                    <img class="gallery-pictures" alt="gallery" src="img/gelleryNEW2/WhatsApp%20Image%202022-07-08%20at%2016.30.07.jpeg" onclick="gallery(this);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Contactează-ne!</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Focșani, România</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon: +04 123 456 789</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: abcplusplus@mail.com</p>
+            <br>
+            <form action="https://formspree.io/f/moqrnnkj" method="POST">
+                <p><input class="w3-input w3-border" type="text" placeholder="Nume" required name="Nume"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subiect" required name="Subiect"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Mesaj" required name="Mesaj"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> TRIMITE
+                    </button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Mergi sus</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/profile.php?id=100004507428543"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/ioana_galan/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/ioana-galan-69567920a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>Creat de Ioana Galan</p>
+        <p>Au fost folosite: un framework de pe w3schools, Bootstrap 5 grid system, poze de pe site-urile Unsplash și Pexels, plug-inurile Formspree și Formito</p>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <div data-formito-id="43y4nEuLd3BjvMgbCHDP" data-trigger="fab" data-color="#000000" data-button-icon="https://s.formito.com/img/icon-fab/1.png" data-button-shape="round"></div>
+    <script src="https://s.formito.com/ft.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68fe338c50.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
