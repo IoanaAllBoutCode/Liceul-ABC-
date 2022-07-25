@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ro">
+<html>
+
+<head>
+    <title>Liceul ABC++</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Link-uri importante-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68fe338c50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--Loading-->
+<div class="preloader">
+        <div class="status">&nbsp;
+        </div>
+    </div>
+    <!--Bara de navigare-->
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+     <img style="width: 50px; height: auto; margin-left: 10px;" class="navbar-brand" src="img/logo/BEST-LOGO.jpeg" alt="logo"/>
+      <button id="menu-button" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample04" style="margin-right: 20px;">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-house"></i><b>ACASĂ</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class=" w3-bar-item w3-button" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; font-family: Poppins-SemiBold, sans-serif;"><i class="fa fa-book"></i>
+            CURSURI
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="html_main.html">HTML</a></li>
+            <li><a class="dropdown-item" href="css_main.html">CSS</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> <b>CONTACT</b></a>
+            </li>
+               <li class="nav-item">
+                <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-right-to-bracket"></i><b>LOG IN</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <div id="up"></div>
+    <div onclick="menudown()" id="google_translate_element"></div>
+    <div style="padding:128px 16px; background-color: #FDFDFD; z-index: 1">
+    <h1 class="w3-center">CSS</h1>
+    <br>
+    <br>
+    <h2>Definiţie</h2>
+    <p class="w3-large">Css-ul este un limbaj de stilizare al elementelor html, al tag-urilor html. Denumirea CSS provine din expresia Cascading Style Sheets. În Web Design-ul modern, pentru stilizarea paginilor web se folosește numai CSS. Acest lucru înseamna că de la culoarea literelor și a background-ului până și la pozitionarea elementelor de pe o pagina web, totul este stilizat prin CSS. 
+        Un fișier CSS se recunoaște după extensia sa ".css".</p>
+       <p class="w3-large">Sintaxă:</p>
+        <p><code class="w3-large">obiect {</code></p>
+        <p><code class="w3-large"> atribute;</code></p>
+        <p><code class="w3-large"> atribute; etc.}</code></p>
+        <br>
+        <p class="w3-large">Un comentariu în CSS: /&#42;Comentariu &#42;/</p>
+       <p class="w3-large">Există 3 moduri în care se folosește CSS-ul:
+        </p>
+    </div>
+    
+    <div class="w3-container w3-light-grey" style="padding:128px 16px"> 
+    <h2>1. În tag-ul &lt;head&gt;</h2>
+    <p class="w3-large">Stilul unui document poate fi definit în tag-ul &lt;head&gt; al documentului. Exemplu:</p>
+    
+        <code class="w3-large">
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;title&gt;Site-ul meu&lt;/title&gt;<br>
+        <b>
+        &lt;style&gt;<br>
+        body{<br>
+            background-color: blue;<br>
+            color: green;<br>
+        };<br>
+        &lt;/style&gt;<br>
+        </b>
+        &lt;/head&gt;<br>
+            &lt;body&gt;<br> 
+            &lt;h1&gt;Bună!&lt;/h1&gt;<br>
+        &lt;/body&gt;<br>
+    &lt;/html&gt;<br>
+        </code>
+    <p class="w3-large">După ce a fost adăugat stilul, pagina va avea fundal albastru și scris verde.</p>
+    <a class="next-btn" href="tries_css_class/try.html" target="_blank">Încearcă!</a>
+    </div>
+    <div style="padding:128px 16px" id="at_school">
+    <h2>2. Într-un fișier extern</h2>
+    <p class="w3-large">Un document poate fi stilizat și prin scrierea comenzilor într-un fișier separat CSS, care este mai târziu "legat" de cel HTML în tag-ul &lt;head&gt;. Exemplu:</p>
+    <br>
+    <i class="w3-large">styel.css</i><br>
+    <code class="w3-large">
+        body{<br>
+            background-color: red;<br>
+            color: violet;<br>
+        };
+    </code>
+    <br>
+    <i class="w3-large">index.html</i><br>
+    <code class="w3-large">
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;title&gt;Site-ul meu&lt;/title&gt;<br>
+        <b>&lt;link rel="stylesheet" href="style.css"&gt;<br></b>
+        &lt;/head&gt;<br>
+            &lt;body&gt;<br> 
+            &lt;h1&gt;Bună!&lt;/h1&gt;<br>
+        &lt;/body&gt;<br>
+    &lt;/html&gt;<br>
+    </code>
+    <br>
+     <p class="w3-large">Astfel, fundalul site-ului va fi roșu și culoarea scrisului, violet. Această variantă este cea mai recomandată la proiectele mari pentru ca liniile de cod să rămână lizibile și mai usor de parcurs.</p>   
+      <a class="next-btn" href="tries_css_class/try2.html" target="_blank">Încearcă!</a>  
+    </div>
+    
+    <div class="w3-container w3-light-grey" style="padding:128px 16px"> 
+    <h2>3. În tag-ul elementului</h2>
+    <p class="w3-large">O ultima metoda ar fi stilizarea unui singur element în tag-ul respectiv. Exemplu: </p>
+   
+    <code class="w3-large">
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;title&gt;Site-ul meu&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+            &lt;body<b> style="background-color: black; color: white";</b>&gt;<br> 
+            &lt;h1&gt;Bună!&lt;/h1&gt;<br>
+        &lt;/body&gt;<br>
+    &lt;/html&gt;<br>
+    </code>
+     
+      <p class="w3-large">Pagina va fi neagra cu scris alb. Această metodă de stilizare ajută când e nevoie ca un singur element să aibă anumite atribute.</p>
+      <a class="next-btn" href="tries_css_class/try3.html" target="_blank">Încearcă!</a>
+       
+        
+         
+           </div>
+
+   
+   
+   <!--Tutoriale-->
+   <div style="padding:128px 16px; background-color: #FDFDFD; z-index: 1">
+   <h2>Tutoriale</h2>
+   <p class="w3-large">Pentru mai multe informaţii, am pregătit un videoclip în română care ar putea ajuta:</p>
+   <div class="youtube-video">
+   <iframe class="video" src="https://www.youtube-nocookie.com/embed/-aiX8A2vfQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div><br><br>
+    <p class="w3-large">Vă recomandăm și acest tutorial în engleză:</p>
+<div class="youtube-video">
+    <iframe class="video" src="https://www.youtube-nocookie.com/embed/1Rs2ND1ryYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+       <br><br><br><br>
+       <!--Test-->
+       <div class="w3-center">
+        <h2>Dacă vrei să iţi verifici cunoștinţele, încearcă testul următor:</h2>
+        <a href="test_css.html" class="next-btn">Testează-te!</a>
+        </div>
+        </div>
+   
+   
+   
+   
+   
+   
+   <!--Sectiunea "Contact"-->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Contactează-ne!</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Focșani, România</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon: +04 123 456 789</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: abcplusplus@mail.com</p>
+            <br>
+            <form action="https://formspree.io/f/moqrnnkj" method="POST">
+                <p><input class="w3-input w3-border" type="text" placeholder="Nume" required name="Nume"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subiect" required name="Subiect"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Mesaj" required name="Mesaj"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> TRIMITE
+                    </button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+<!--Footer-->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#up" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Mergi sus</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/profile.php?id=100004507428543"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/ioana_galan/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/ioana-galan-69567920a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>Powered by Ioana Galan</p>
+        <p>Au fost folosite: un framework de pe w3schools, Bootstrap 5 grid system, poze de pe site-urile Unsplash si Pexels, plug-inurile Formspree si Formito</p>
+    </footer>
+
+<!--Plug-in-->
+    <div data-formito-id="43y4nEuLd3BjvMgbCHDP" data-trigger="fab" data-color="#000000" data-button-icon="https://s.formito.com/img/icon-fab/1.png" data-button-shape="round"></div>
+    <!--Link-uri catre fisiere externe JS-->
+    <script src="https://s.formito.com/ft.js" async></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+        cb=googleTranslateElementInit">
+    </script> 
+    <script src="js/script.js"></script>
+</body>
+
+</html>

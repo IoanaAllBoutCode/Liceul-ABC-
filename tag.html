@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ro">
+<html>
+
+<head>
+    <title>Liceul ABC++</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Link-uri importante-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68fe338c50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!--Loading-->
+    <div class="preloader">
+        <div class="status">&nbsp;
+        </div>
+    </div>
+    <!--Bara de navigare-->
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <img style="width: 50px; height: auto; margin-left: 10px;" class="navbar-brand" src="img/logo/BEST-LOGO.jpeg" alt="logo" />
+            <button id="menu-button" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample04" style="margin-right: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-house"></i><b>ACASĂ</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class=" w3-bar-item w3-button" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; font-family: Poppins-SemiBold, sans-serif;"><i class="fa fa-book"></i>
+                            CURSURI
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="html_main.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="css_main.html">CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> <b>CONTACT</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-right-to-bracket"></i><b>LOG IN</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="up"></div>
+    <div onclick="menudown()" id="google_translate_element"></div>
+    <!--Lista tag-uri-->
+    <div style="padding:128px 16px; background-color: #FDFDFD; z-index: 1">
+        <h1 class="w3-center">Listă Tag-uri</h1>
+        <a class="next-btn" href="html_main.html">❮ Înapoi</a>
+        <br>
+        <br>
+        <table style="width: 100%;">
+            <tbody id="myTable">
+                <tr bgcolor="#ffe246">
+                    <td width=50%>&lt;!--...--&gt;</td>
+                    <td>Definește un comentariu</td>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE&gt;&nbsp;</td>
+                    <td>Definește tipul documentului</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;a&gt;</td>
+                    <td>Definește un hyperlink</td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Definește o abreviere sau un acronim</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;acronym&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește &lt;abbr&gt; în schimb</span><br>Definește un acronim</td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Definește informațiile de contact ale autorului/proprietarului documentului</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;applet&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește &lt;embed&gt; sau &lt;object&gt; în schimb.<br></span>Definește un applet
+                        încorporat</td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Definește o arie într-o imagine de tip harta</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;article&gt;</td>
+                    <td>Definește un articol</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Definește conținut în afara de conținutul paginii</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;audio&gt;</td>
+                    <td>Definește conținutul sonor încorporat</td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Definește text îngroșat</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;base&gt;</td>
+                    <td>Specifică adresa URL/țintă de bază pentru toate adresele URL relative dintr-un document</td>
+                </tr>
+                <tr>
+                    <td>&lt;basefont&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește CSS în schimb.<br></span>Specifică o culoare, o dimensiune și un font implicit pentru tot textul dintr-un document</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;bdi&gt;</td>
+                    <td>Isolates a part of text that might be formatted in a different direction
+                        from other text outside it</td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Ignoră direcția curentă a textului</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;big&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește CSS în schimb.<br></span>Definește text mare</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Definește o secțiune care este citată dintr-o altă sursă</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;body&gt;</td>
+                    <td>Definește corpul documentului</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Definește o singură întrerupere de linie</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;button&gt;</td>
+                    <td>Definește un buton pe care se poate face clic</td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Folosit pentru a desena grafice, din mers, prin scripting (de obicei JavaScript)</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;caption&gt;</td>
+                    <td>Definește o legendă de tabel</td>
+                </tr>
+                <tr>
+                    <td>&lt;center&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește CSS în schimb.<br></span>Definește text centrat</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;cite&gt;</td>
+                    <td>Definește titlul unei lucrări</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Definește o bucată de cod</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;col&gt;</td>
+                    <td>Specifică proprietățile coloanei pentru fiecare coloană dintr-un &lt;colgroup&gt; element&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Specifies a group of one or more columns in a table for formatting</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;data&gt;</td>
+                    <td>Traduce un anumit conținut, astfel încât să poată fi citit de mașină</td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>Specifică o listă de opțiuni predefinite pentru controalele de intrare</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;dd&gt;</td>
+                    <td>Definește o descriere/valoare a unui termen dintr-o listă de descriere</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Definește textul care a fost șters dintr-un document</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;details&gt;</td>
+                    <td>Definește detalii suplimentare pe care utilizatorul le poate vizualiza sau ascunde</td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Specifică un termen care va fi definit în conținut</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;dialog&gt;</td>
+                    <td>Definește o casetă de dialog sau o fereastră</td>
+                </tr>
+                <tr>
+                    <td>&lt;dir&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește &lt;ul&gt; în schimb.<br></span>Definește o listă de directoare</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;div&gt;</td>
+                    <td>Definește o secțiune dintr-un document</td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Definește o listă de descriere</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;dt&gt;</td>
+                    <td>Definește un termen/nume într-o listă de descriere</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Definește text accentuat&nbsp;</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;embed&gt;</td>
+                    <td>Definește un container pentru o aplicație externă</td>
+                </tr>
+                <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>Grupează elemente înrudite într-un formular</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Definește o legendă pentru un element &lt;figura&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Specifică conținut autonom</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;font&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește CSS în schimb.<br></span>Definește fontul, culoarea și dimensiunea textului</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Definește un subsol pentru un document sau secțiune</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;form&gt;</td>
+                    <td>Definește un formular HTML.</td>
+                </tr>
+                <tr>
+                    <td>&lt;frame&gt;</td>
+                    <td><span>Nu există în HTML5.<br></span>Definește o fereastră (un cadru) într-un set de cadre</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;frameset&gt;</td>
+                    <td><span>Nu există în HTML5.<br></span>Definește un set de cadre</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                    <td> Definește titluri HTML</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;head&gt;</td>
+                    <td>Conține metadate/informații pentru document</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Definește un antet pentru un document sau secțiune</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;hr&gt;</td>
+                    <td>Definește o modificare tematică a conținutului</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Definește rădăcina unui document HTML</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;i&gt;</td>
+                    <td>Definește o parte a textului într-o voce sau o stare de spirit diferita</td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Definește un cadru inline</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;img&gt;</td>
+                    <td>Definește o imagine</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Definește un control de intrare</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;ins&gt;</td>
+                    <td>Definește un text care a fost inserat într-un document</td>
+                </tr>
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Definește intrarea de la tastatură</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;label&gt;</td>
+                    <td>Definește o etichetă&nbsp;pentru un element &lt;input&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>Definește o legendă pentru un element &lt;fieldset&gt;</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;li&gt;</td>
+                    <td>Definește un element din listă</td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Definește relația dintre un document și o resursă externă (majoritatea
+                        folosit pentru a conecta la foile de stil)</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;main&gt;</td>
+                    <td>Specifies the main content of a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>Definește o imagine de tip hartă </td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;mark&gt;</td>
+                    <td>Definește textul marcat/evidențiat</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Definește metadatele despre un document HTML</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;meter&gt;</td>
+                    <td>Definește o măsurătoare scalară într-un interval cunoscut (un indicator)</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Definește link-urile de navigare</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;noframes&gt;</td>
+                    <td><span>Nu există în HTML5.<br></span>Definește un conținut alternativ pentru utilizatorii care nu acceptă cadre</td>
+                </tr>
+                <tr>
+                    <td>&lt;noscript&gt;</td>
+                    <td>Definește un conținut alternativ pentru utilizatorii care nu acceptă
+                        scripturi pe partea clientului</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;object&gt;</td>
+                    <td>Definește un container pentru o aplicație externă</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Definește o listă ordonată</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Definește un grup de opțiuni asociate într-o listă derulantă</td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Definește o opțiune într-o listă derulantă</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;output&gt;</td>
+                    <td>Definește rezultatul unui calcul</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Definește un paragraf</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;param&gt;</td>
+                    <td>Definește un parametru pentru un obiect</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>Definește un container pentru mai multe resurse de imagine</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;pre&gt;</td>
+                    <td>Definește textul preformatat</td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>Reprezintă progresul unei sarcini</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;q&gt;</td>
+                    <td>Definește o citație scurtă</td>
+                </tr>
+                <tr>
+                    <td>&lt;rp&gt;</td>
+                    <td>Definește ce să se afișeze în browserele care nu acceptă adnotări ruby</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;rt&gt;</td>
+                    <td>Definește o explicație/pronunțare a caracterelor (pentru tipografia Asiei de Est)</td>
+                </tr>
+                <tr>
+                    <td>&lt;ruby&gt;</td>
+                    <td>Definește o adnotare rubin (pentru tipografia din Asia de Est)</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;s&gt;</td>
+                    <td>Definește text care nu mai este corect</td>
+                </tr>
+                <tr>
+                    <td>&lt;samp&gt;</td>
+                    <td>Definește eșantionul de ieșire dintr-un program de calculator</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;script&gt;</td>
+                    <td>Definește un script client-side</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Definește o secțiune dintr-un document</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;select&gt;</td>
+                    <td>Definește o listă derulantă</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Definește text mic</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;source&gt;</td>
+                    <td>Definește mai multe resurse media pentru elementele media (&lt;video&gt; și &lt;audio&gt;)</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Definește o secțiune dintr-un document</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;strike&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește &lt;del&gt; sau &lt;s&gt; în schimb.<br></span>Definește textul barat</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Definește text important</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;style&gt;</td>
+                    <td>Definește informațiile de stil pentru un document</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Definește text cu indice</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;summary&gt;</td>
+                    <td>Definește un titlu vizibil pentru un element &lt;detalii&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Definește textul suprascript</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;svg&gt;</td>
+                    <td>Definește un container pentru grafica SVG</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Definește un tabel</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;tbody&gt;</td>
+                    <td>Grupează conținutul corpului într-un tabel</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Definește o celulă dintr-un tabel</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;template&gt;</td>
+                    <td>Definește un container pentru conținut care ar trebui să fie ascuns atunci când pagina se încarcă</td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Definește un control de intrare cu mai multe linii (zonă de text)</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Grupează conținutul subsolului într-un tabel</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Definește o celulă antet într-un tabel</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;thead&gt;</td>
+                    <td>Grupează conținutul antetului într-un tabel</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Definește o anumită oră (sau o dată)</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;title&gt;</td>
+                    <td>Definește un titlu pentru document</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Definește un rând într-un tabel</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;track&gt;</td>
+                    <td>Definește piste de text pentru elementele media (&lt;video&gt; și &lt;audio&gt;)</td>
+                </tr>
+                <tr>
+                    <td>&lt;tt&gt;</td>
+                    <td><span>Nu există în HTML5. Folosește CSS în schimb<br></span>Definește textul prin teletip</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;u&gt;</td>
+                    <td>Definește un text care este nearticulat și stilat diferit de cel normal text</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Definește o listă neordonată</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;var&gt;</td>
+                    <td>Definește o variabilă</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Definește conținutul video încorporat</td>
+                </tr>
+                <tr bgcolor="#ffe246">
+                    <td>&lt;wbr&gt;</td>
+                    <td>Definește o posibilă întrerupere de linie</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    
+    <!--Sectiunea "Contact-->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
+
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Contactează-ne!</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Focșani, România</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon: +04 123 456 789</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: abcplusplus@mail.com</p>
+            <br>
+            <form action="https://formspree.io/f/moqrnnkj" method="POST">
+                <p><input class="w3-input w3-border" type="text" placeholder="Nume" required name="Nume"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subiect" required name="Subiect"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Mesaj" required name="Mesaj"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> TRIMITE
+                    </button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+<!--Footere-->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#up" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Mergi sus</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/profile.php?id=100004507428543"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/ioana_galan/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/ioana-galan-69567920a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>Powered by Ioana Galan</p>
+        <p>A fost folosit: un framework de pe w3schools, Bootstrap 5 grid system, poze de pe site-urile Unsplash si Pexels, plug-inurile Formspree si Formito</p>
+    </footer>
+
+    <!--Plug-in-->
+    <div data-formito-id="43y4nEuLd3BjvMgbCHDP" data-trigger="fab" data-color="#000000" data-button-icon="https://s.formito.com/img/icon-fab/1.png" data-button-shape="round"></div>
+    <!--Link-uri catre fisiere externe JS-->
+    <script src="https://s.formito.com/ft.js" async></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+        cb=googleTranslateElementInit">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
