@@ -49,9 +49,6 @@ html {
     line-height: 1.8;
 }
 
-body {
-    background-image: url("css/2.jpg");
-}
 .preloader {
     background-color: white;
     position: fixed;

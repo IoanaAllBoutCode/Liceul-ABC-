@@ -45,10 +45,13 @@ function gallery(imgSelected) {
 
 }
 
+//Teste
+var questions, choose1, choose2, choose3, choose4, choose5, choose6, choose7, choose8, choose9, choose10;
 
 
-//Test html
-var questions = ["Tag-urile sunt MEREU în perechi &lt;tag&gt;&lt;/tag&gt;.",
+
+function start1() {
+      questions = ["Tag-urile sunt MEREU în perechi &lt;tag&gt;&lt;/tag&gt;.",
             "HTML permite inserarea legaturior (link-urilor) către alte pagini Web aflate oriunde în lume.",
             "Tag-urile &lt;b&gt;&lt;/b&gt; definesc un buton.",
             "Într-un document HTML5 gasim mereu: <code> &lt;!DOCTYPE html&gt; </code>, <code> &lt;head&gt;&lt;/head&gt; </code>,<code> &lt;body&gt;&lt;/body&gt;</code>.",
@@ -59,29 +62,95 @@ var questions = ["Tag-urile sunt MEREU în perechi &lt;tag&gt;&lt;/tag&gt;.",
             "HTML este un limbaj de programare.",
             "HTML-ul nu face deosebire între majuscule și minuscule."
         ];
+    
+    
+    
+  choose1 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose2 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose3 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose4 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose5 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose6 = ["<button class=next-btn onclick=q1i()>/*Comentariu*/</button><br><br><button class=next-btn onclick=q1c()>&lt;!--Comentariu--&gt;</button>"];
+  choose7 = ["<button class=next-btn onclick=q1c()>Inserează o ancoră</button><br><br><button class=next-btn onclick=q1i()>Schimbă culorea unui text</button>"];
+  choose8 = ["<button class=next-btn onclick=q1c()>&lt;h6&gt;&lt;/h6&gt;</button><br><br><button class=next-btn onclick=q1i()>&lt;h1&gt;&lt;/h1&gt;</button>"];
+  choose9 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose10 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+    
+    disappear.innerHTML = "";
+    space1.innerHTML = questions[0];
+    space2.innerHTML = choose1;
+    qnumbertop.innerHTML = question_number++;
+}
 
-var choose1 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
-var choose2 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
-var choose3 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
-var choose4 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
-var choose5 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
-var choose6 = ["<button class=next-btn onclick=q1i()>/*Comentariu*/</button><br><br><button class=next-btn onclick=q1c()>&lt;!--Comentariu--&gt;</button>"];
-var choose7 = ["<button class=next-btn onclick=q1c()>Inserează o ancoră</button><br><br><button class=next-btn onclick=q1i()>Schimbă culorea unui text</button>"];
-var choose8 = ["<button class=next-btn onclick=q1c()>&lt;h6&gt;&lt;/h6&gt;</button><br><br><button class=next-btn onclick=q1i()>&lt;h1&gt;&lt;/h1&gt;</button>"];
-var choose9 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
-var choose10 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+function start2() {
+    questions = ["Rolul CSS-ului e de a stiliza tag-urile HTML",
+            "Câte moduri de a stiliza un document HTML există?",
+            "Stilizatul unui document în tag-urile <code>&lt;head&gt; &lt;/head&gt;</code> este cel mai recomandat.",
+            "Pentru a schimba culoarea fundalului putem folosi codul:",
+            "Denumirea CSS provine din expresia Cascading Style Sheets",
+            "Cum poate fi introdus un comentariu în CSS?",
+            "Care este sintaxa codului CSS?",
+            "Extensia unui fişier CSS este .css?",
+            "CSS nu este un limbaj de programare.",
+            "Care e forma corectă de a lega un fişier extern CSS la unul HTML?"
+        ];
+
+  choose1 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose2 = ["<button class=next-btn onclick=q1i()>4</button><br><br><button class=next-btn onclick=q2c()>3</button>"];
+  choose3 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose4 = ["<button class=next-btn onclick=q1i()>body{color:blue}</button><br><br><button class=next-btn onclick=q1c()>body{ background-color: blue;}</button>"];
+  choose5 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose6 = ["<button class=next-btn onclick=q1c()>/*Comentariu*/</button><br><br><button class=next-btn onclick=q1i()>&lt;!--Comentariu--&gt;</button>"];
+  choose7 = ["<button class=next-btn onclick=q1i()>&lt;tag&gt;Conţinut...&lt;/tag&gt;</button><br><br><button class=next-btn onclick=q1c()>obiect{atribute, atribute, etc};</button>"];
+  choose8 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose9 = ["<button class=next-btn onclick=q1c()>Adevărat</button><br><br><button class=next-btn onclick=q1i()>Fals</button>"];
+  choose10 = ["<button class=next-btn onclick=q1i()>&lt;stylesheet&gt;style.css&lt;/stylesheet&gt;</button><br><br><button class=next-btn onclick=q1c()>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;</button>"];
+    disappear.innerHTML = "";
+    space1.innerHTML = questions[0];
+    space2.innerHTML = choose1;
+    qnumbertop.innerHTML = question_number++;
+}
+
+function start3() {
+    questions = ["Ce simbol trebuie folosit pentru a stiliza un ID?",
+            "Numele unei clase trebuie sa fie unic in document.",
+            "Ce simbol trebuie folosit pentru a stiliza o clasa?",
+            "... este un exemplu bun de clase.",
+            "Numele unui ID nu trebuie sa fie unic in document",
+            "... este un exemplu bun de ID.",
+            "Clasele, in informatica, sunt...",
+            "Pentru a atribui un ID unui obiect folosim <tag id:&quot;numeID&quot;>",
+            "Id-urile, in informatica, sunt...",
+            "Pentru a atribui o clasa unui obiect folosim <tag clase=&quot;numeClasa&quot;>"   
+            
+        ];
+
+  choose1 = ["<button class=next-btn onclick=q1c()>#</button><br><br><button class=next-btn onclick=q1i()>.</button>"];
+  choose2 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose3 = ["<button class=next-btn onclick=q1i()>#</button><br><br><button class=next-btn onclick=q1c()>.</button>"];
+  choose4 = ["<button class=next-btn onclick=q1i()>CNP</button><br><br><button class=next-btn onclick=q1c()>Scoala</button>"];
+  choose5 = ["<button class=next-btn onclick=q1i()>Adevărat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+  choose6 = ["<button class=next-btn onclick=q1c()>Numar de inmatriculare</button><br><br><button class=next-btn onclick=q1i()>Clasa pensionarilor</button>"];
+    choose7 = ["<button class=next-btn onclick=q1i()>Incaperi in care se studiaza informatica</button><br><br><button class=next-btn onclick=q1c()>Grupuri de obiecte cu aceleasi atribute/actiuni</button>"];
+    choose8 = ["<button class=next-btn onclick=q1i()>Adevarat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+    choose9 = ["<button class=next-btn onclick=q1c()>&quot;Nume&quot; unice date unui singur obiect</button><br><br><button class=next-btn onclick=q1i()>Acte, documente ale unei persoane</button>"];
+    choose10 = ["<button class=next-btn onclick=q1i()>Adevarat</button><br><br><button class=next-btn onclick=q1c()>Fals</button>"];
+    disappear.innerHTML = "";
+    space1.innerHTML = questions[0];
+    space2.innerHTML = choose1;
+    qnumbertop.innerHTML = question_number++;
+}
+
+
+
+
 
 var question_number = 0;
 question_number++;
 var score = 0;
 score++;
 
-function start1() {
-    disappear.innerHTML = "";
-    space1.innerHTML = questions[0];
-    space2.innerHTML = choose1;
-    qnumbertop.innerHTML = question_number++;
-}
+
 
 function q1c() {
     space3.innerHTML = "Corect!";
@@ -154,128 +223,30 @@ function next1() {
     } else {
         space1.innerHTML = "Final";
         if (score > "9")
+            {
             space4.innerHTML = "<b>Felicitări!</b>";
+                document.getElementById("results_img").src = "img/tests/undraw_Happy_news_re_tsbd.png";
+    document.getElementById("results_img").style.display = "block";
+            }
         else if (score > "7")
+            {
             space4.innerHTML = "<b>Bravo!</b>";
+                document.getElementById("results_img").src = "img/tests/undraw_Happy_announcement_re_tsm0.png";
+    document.getElementById("results_img").style.display = "block";
+            }
         else if (score > "5")
+            {
             space4.innerHTML = "<b>Este bine!</b>";
+        document.getElementById("results_img").src = "img/tests/undraw_Learning_re_32qv.png";
+    document.getElementById("results_img").style.display = "block";
+            }
         else
+            {
             space4.innerHTML = "<b>Mai repetă!</b>";
+        document.getElementById("results_img").src = "img/tests/undraw_Books_re_8gea.png";
+    document.getElementById("results_img").style.display = "block";
+            }
     }
 }
-//Test css
-var questions2 = ["Rolul CSS-ului e de a stiliza tag-urile HTML",
-            "Câte moduri de a stiliza un document HTML există?",
-            "Stilizatul unui document în tag-urile <code>&lt;head&gt; &lt;/head&gt;</code> este cel mai recomandat.",
-            "Pentru a schimba culoarea fundalului putem folosi codul:",
-            "Denumirea CSS provine din expresia Cascading Style Sheets",
-            "Cum poate fi introdus un comentariu în CSS?",
-            "Care este sintaxa codului CSS?",
-            "Extensia unui fişier CSS este .css?",
-            "CSS nu este un limbaj de programare.",
-            "Care e forma corectă de a lega un fişier extern CSS la unul HTML?"
-        ];
 
-var choose12 = ["<button class=next-btn onclick=q2c()>Adevărat</button><br><br><button class=next-btn onclick=q2i()>Fals</button>"];
-var choose22 = ["<button class=next-btn onclick=q2i()>4</button><br><br><button class=next-btn onclick=q2c()>3</button>"];
-var choose32 = ["<button class=next-btn onclick=q2i()>Adevărat</button><br><br><button class=next-btn onclick=q2c()>Fals</button>"];
-var choose42 = ["<button class=next-btn onclick=q2i()>body{color:blue}</button><br><br><button class=next-btn onclick=q2c()>body{ background-color: blue;}</button>"];
-var choose52 = ["<button class=next-btn onclick=q2c()>Adevărat</button><br><br><button class=next-btn onclick=q2i()>Fals</button>"];
-var choose62 = ["<button class=next-btn onclick=q2c()>/*Comentariu*/</button><br><br><button class=next-btn onclick=q2i()>&lt;!--Comentariu--&gt;</button>"];
-var choose72 = ["<button class=next-btn onclick=q2i()>&lt;tag&gt;Conţinut...&lt;/tag&gt;</button><br><br><button class=next-btn onclick=q2c()>obiect{atribute, atribute, etc};</button>"];
-var choose82 = ["<button class=next-btn onclick=q2c()>Adevărat</button><br><br><button class=next-btn onclick=q2i()>Fals</button>"];
-var choose92 = ["<button class=next-btn onclick=q2c()>Adevărat</button><br><br><button class=next-btn onclick=q2i()>Fals</button>"];
-var choose102 = ["<button class=next-btn onclick=q2i()>&lt;stylesheet&gt;style.css&lt;/stylesheet&gt;</button><br><br><button class=next-btn onclick=q2c()>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;</button>"];
 
-var question_number2 = 0;
-question_number2++;
-var score2 = 0;
-score2++;
-
-function start2() {
-    disappear2.innerHTML = "";
-    space12.innerHTML = questions2[0];
-    space22.innerHTML = choose12;
-    qnumbertop2.innerHTML = question_number2++;
-}
-
-function q2c() {
-    space32.innerHTML = "Corect!";
-    space22.innerHTML = "";
-    scoretop2.innerHTML = score2++;
-    space42.innerHTML = "<button class=next-btn onclick=next2()>Continuă</button>";
-}
-
-function q2i() {
-    space32.innerHTML = "Incorect!";
-    space22.innerHTML = "";
-    space42.innerHTML = "<button class=next-btn onclick=next2()>Continuă</button>";
-}
-
-function next2() {
-    if (question_number2 == "2") {
-        space12.innerHTML = questions2[1];
-        space22.innerHTML = choose22;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "3") {
-        space12.innerHTML = questions2[2];
-        space22.innerHTML = choose32;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "4") {
-        space12.innerHTML = questions2[3];
-        space22.innerHTML = choose42;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "5") {
-        space12.innerHTML = questions2[4];
-        space22.innerHTML = choose52;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "6") {
-        space12.innerHTML = questions2[5];
-        space22.innerHTML = choose62;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "7") {
-        space12.innerHTML = questions2[6];
-        space22.innerHTML = choose72;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "8") {
-        space12.innerHTML = questions2[7];
-        space22.innerHTML = choose82;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "9") {
-        space12.innerHTML = questions2[8];
-        space22.innerHTML = choose92;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else if (question_number2 == "10") {
-        space12.innerHTML = questions2[9];
-        space22.innerHTML = choose102;
-        space32.innerHTML = "";
-        qnumbertop2.innerHTML = question_number2++;
-        space42.innerHTML = "";
-    } else {
-        space12.innerHTML = "Final";
-        if (score2 > "9")
-            space42.innerHTML = "<b>Felicitări!</b>";
-        else if (score2 > "7")
-            space42.innerHTML = "<b>Bravo!</b>";
-        else if (score2 > "5")
-            space42.innerHTML = "<b>Este bine!</b>";
-        else
-            space42.innerHTML = "<b>Mai repetă!</b>";
-    }
-}
