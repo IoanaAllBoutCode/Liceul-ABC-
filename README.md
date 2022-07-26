@@ -11,4 +11,4 @@ Poze - Unsplash, Pexels
 Test - tutorial YouTube (https://youtu.be/QfPUAwyg3Yo)
 Informatii - Wikipedia, DexOnline, Merriam-Webster
 Log In, Sign In - site-ul Cololib
-Ilustrati i- unDraw
+Ilustratii- unDraw
